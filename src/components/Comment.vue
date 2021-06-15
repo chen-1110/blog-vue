@@ -162,22 +162,22 @@
             </span>
           </div>
           <!-- 回复分页 -->
-          <div
-            class="mb-3"
-            style="font-size:0.75rem;color:#222;display:none"
-            ref="paging"
-          >
-            <span style="padding-right:10px">
-              共{{ Math.ceil(item.replyCount / 5) }}页
-            </span>
-            <paging
-              ref="page"
-              :totalPage="Math.ceil(item.replyCount / 5)"
-              :index="index"
-              :commentId="item.id"
-              @changeReplyCurrent="changeReplyCurrent"
-            />
-          </div>
+<!--          <div-->
+<!--            class="mb-3"-->
+<!--            style="font-size:0.75rem;color:#222;display:none"-->
+<!--            ref="paging"-->
+<!--          >-->
+<!--            <span style="padding-right:10px">-->
+<!--              共{{ Math.ceil(item.replyCount / 5) }}页-->
+<!--            </span>-->
+<!--            <paging-->
+<!--              ref="page"-->
+<!--              :totalPage="Math.ceil(item.replyCount / 5)"-->
+<!--              :index="index"-->
+<!--              :commentId="item.id"-->
+<!--              @changeReplyCurrent="changeReplyCurrent"-->
+<!--            />-->
+<!--          </div>-->
           <!-- 回复框 -->
           <Reply ref="reply" @reloadReply="reloadReply" />
         </div>
@@ -198,14 +198,14 @@
 
 <script>
 import Reply from "./Reply";
-import Paging from "./Paging";
+// import Paging from "./Paging";
 import Emoji from "./Emoji";
 import EmojiList from "../assets/js/emoji";
 export default {
   components: {
     Reply,
     Emoji,
-    Paging
+    // Paging
   },
   props: {
     commentList: {
@@ -305,6 +305,8 @@ export default {
         articleId: arr[2],
         commentContent: this.commentContent
       };
+      console.log(arr[2]);
+      console.log(comment);
       this.commentContent = "";
       this.axios.post("/api/comments", comment).then(() => {
         //查询最新评论
