@@ -13,15 +13,15 @@
     <!-- 返回顶部 -->
     <BackTop></BackTop>
     <!-- 搜索模态框 -->
-    <searchModel></searchModel>
+<!--    <searchModel></searchModel>-->
     <!-- 登录模态框 -->
-    <LoginModel></LoginModel>
+<!--    <LoginModel></LoginModel>-->
     <!-- 注册模态框 -->
-    <RegisterModel></RegisterModel>
+<!--    <RegisterModel></RegisterModel>-->
     <!-- 忘记密码模态框 -->
-    <ForgetModel></ForgetModel>
+<!--    <ForgetModel></ForgetModel>-->
     <!-- 绑定邮箱模态框 -->
-    <EmailModel></EmailModel>
+<!--    <EmailModel></EmailModel>-->
     <!-- 音乐播放器 -->
     <Player></Player>
     <!-- 聊天室 -->
@@ -34,11 +34,11 @@ import TopNavBar from "./components/layout/TopNavBar";
 import SideNavBar from "./components/layout/SideNavBar";
 import Footer from "./components/layout/Footer";
 import BackTop from "./components/BackTop";
-import searchModel from "./components/model/SearchModel";
-import LoginModel from "./components/model/LoginModel";
-import RegisterModel from "./components/model/RegisterModel";
-import ForgetModel from "./components/model/ForgetModel";
-import EmailModel from "./components/model/EmailModel";
+// import searchModel from "./components/model/SearchModel";
+// import LoginModel from "./components/model/LoginModel";
+// import RegisterModel from "./components/model/RegisterModel";
+// import ForgetModel from "./components/model/ForgetModel";
+// import EmailModel from "./components/model/EmailModel";
 import Player from "zw-player";
 // import ChatRoom from "./components/ChatRoom";
 export default {
@@ -47,12 +47,12 @@ export default {
     Player,
     SideNavBar,
     Footer,
-    BackTop,
-    searchModel,
-    LoginModel,
-    RegisterModel,
-    ForgetModel,
-    EmailModel,
+    BackTop
+    // searchModel,
+    // LoginModel,
+    // RegisterModel,
+    // ForgetModel,
+    // EmailModel,
     // ChatRoom
   }
 };
