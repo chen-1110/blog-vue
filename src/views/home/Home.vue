@@ -343,7 +343,7 @@ export default {
   left: 0;
   right: 0;
   height: 100vh;
-  background: url("https://w.wallhaven.cc/full/g7/wallhaven-g7wo7d.jpg") center
+  background: url(http://hc-czw-bucket.oss-cn-beijing.aliyuncs.com/image/%E8%83%8C%E6%99%AF.jpg) center
     center / cover no-repeat;
   background-color: #49b1f5;
   /*background-attachment: fixed;*/
