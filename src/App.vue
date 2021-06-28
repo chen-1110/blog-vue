@@ -39,7 +39,8 @@ import BackTop from "./components/BackTop";
 // import RegisterModel from "./components/model/RegisterModel";
 // import ForgetModel from "./components/model/ForgetModel";
 // import EmailModel from "./components/model/EmailModel";
-import Player from "zw-player";
+// import Player from "zw-player";
+import Player from "./components/zw-player/player.vue";
 // import ChatRoom from "./components/ChatRoom";
 export default {
   components: {
